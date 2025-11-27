@@ -1,47 +1,44 @@
-# Ex.No:1
-# Ex.Name:Write a CPP program to REVERSE the Singly Linked List using STL and Display the same.
+# Ex.No:2
+# Ex.Name : Write a CPP Program to INSERT 5 data's into Doubly Linked List Using STL and Display the same.
 
 ## Aim:
-To write a CPP program to REVERSE the Singly Linked List using STL and Display the same.
-
+To write a CPP Program to INSERT 5 data's into Doubly Linked List Using STL and Display the same.
 
 ## Algorithm:
 1. Start
-2. Create a list container using STL
-3. Read number of elements n
-4. Insert elements into the list using push_back()
-5. Display original list elements
-6. Use reverse() function of STL to reverse the list
-7. Display reversed list elements
-8. Stop
-
+2. Create a doubly linked list using list<int>
+3. Read 5 data elements from user
+4. Insert each element using push_back()
+5. Traverse the list using a for-each loop
+6. Display all elements
+7. Stop
+   
 ## Program:
 ```
 #include <iostream>
-#include <forward_list>
+#include <list>
 
 using namespace std;
 
 int main() 
 {
-    forward_list<int> sll = {10, 20, 40, 30, 70};
+    list<int> gqlist1;
+    int input;
 
-    cout << "List elements before performing reverse operation: ";
     
-    for (const int& elem : sll)
+    for (int i = 0; i < 5; ++i) 
     {
-        cout << elem << " ";
+        cin >> input;
+        gqlist1.push_back(input);
+    }
+
+    cout << "List 1 (gqlist1) is :  ";
+    
+    for (int value : gqlist1) 
+    {
+        cout << value << " ";
     }
     cout << endl;
-
-    sll.reverse();
-
-    cout << "List elements after performing reverse operation: ";
-    
-    for (const int& elem : sll)
-    {
-        cout << elem << " ";
-    }
 
     return 0;
 }
@@ -49,9 +46,7 @@ int main()
 
 
 ## Output:
-<img width="1220" height="314" alt="Screenshot 2025-10-11 132926" src="https://github.com/user-attachments/assets/06a31914-a54b-47e6-9676-8aff0c0756f0" />
+<img width="1176" height="332" alt="Screenshot 2025-10-11 133403" src="https://github.com/user-attachments/assets/62316a4a-ad77-4ddc-9796-1ba0aba574d7" />
 
 ## Result:
-The Program Executed Successfully to REVERSE the Singly Linked List using STL and Display the same.
-
-
+The Program Executed Successfully to INSERT 5 data's into Doubly Linked List Using STL and Display the same.
